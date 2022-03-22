@@ -3,7 +3,7 @@ type: docker
 name: default
 steps:
   - name: greeting
-    image:test
+image: test
 commands:
 -mFROM java:8
 -MAINTAINER "yinhaijing"<304814585@qq.com>
