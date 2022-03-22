@@ -1,0 +1,16 @@
+server:
+  port: 9311
+eureka:
+  instance:
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+    prefer-ip-address: true
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 5000
+  client:
+    # 表示是否注册自身到eureka服务器
+    register-with-eureka: false
+    # 是否从eureka上获取注册信息
+    fetch-registry: false
+    serviceUrl:
+      defaultZone: http://localhost:9311/eureka/
