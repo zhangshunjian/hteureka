@@ -5,7 +5,7 @@ steps:
   - name: greeting
 image: test
 commands:
--mFROM java:8
+-FROM java:8
 -MAINTAINER "yinhaijing"<304814585@qq.com>
 #定义时区参数
 -ENV TZ=Asia/Shanghai
